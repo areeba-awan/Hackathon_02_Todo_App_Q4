@@ -10,8 +10,7 @@ export default function NewTaskPage() {
   const router = useRouter();
 
   const handleSave = (task: Task) => {
-    // In a real app, this would save to the backend
-    // For now, we'll just navigate back to the tasks page
+    // Task has been saved to backend, redirect to tasks page
     router.push('/tasks');
   };
 

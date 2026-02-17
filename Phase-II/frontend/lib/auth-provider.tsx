@@ -3,6 +3,9 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
 
+// Backend API URL
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
 // Define the shape of our auth context
 interface AuthContextType {
   user: any | null;
@@ -36,7 +39,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   // Login function
   const login = async (email: string, password: string) => {
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch(`${API_URL}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,7 +56,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         localStorage.setItem('auth-user', JSON.stringify(data.user));
         router.push('/dashboard');
       } else {
-        throw new Error(data.error || 'Login failed');
+        throw new Error(data.error?.message || data.detail?.message || 'Login failed');
       }
     } catch (error: any) {
       throw new Error(error.message || 'Login failed');
@@ -63,7 +66,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   // Register function
   const register = async (email: string, password: string, name: string) => {
     try {
-      const response = await fetch('/api/auth/register', {
+      const response = await fetch(`${API_URL}/api/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -80,7 +83,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         localStorage.setItem('auth-user', JSON.stringify(data.user));
         router.push('/dashboard');
       } else {
-        throw new Error(data.error || 'Registration failed');
+        throw new Error(data.error?.message || data.detail?.message || 'Registration failed');
       }
     } catch (error: any) {
       throw new Error(error.message || 'Registration failed');

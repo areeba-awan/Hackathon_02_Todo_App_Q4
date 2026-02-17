@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useAuth } from '@/lib/auth-provider';
 import TaskItem from './task-item';
 import { Task } from '@/types/task';
 
@@ -8,7 +9,10 @@ interface TaskListProps {
   userId: string;
 }
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
 export default function TaskList({ userId }: TaskListProps) {
+  const { token } = useAuth();
   const [tasks, setTasks] = useState<Task[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -20,31 +24,30 @@ export default function TaskList({ userId }: TaskListProps) {
   const fetchTasks = async () => {
     try {
       setLoading(true);
-      // This would normally call the API to fetch tasks
-      // For now, we'll use mock data
-      const mockTasks: Task[] = [
-        {
-          id: '1',
-          title: 'Sample Task',
-          description: 'This is a sample task to demonstrate the UI',
-          completed: false,
-          dueDate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days from now
-          createdAt: new Date(),
-          updatedAt: new Date(),
-          userId: userId,
+      const response = await fetch(`${API_URL}/api/tasks`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
         },
-        {
-          id: '2',
-          title: 'Another Sample Task',
-          description: 'This is another sample task',
-          completed: true,
-          dueDate: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), // 2 days ago
-          createdAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
-          updatedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
-          userId: userId,
-        },
-      ];
-      setTasks(mockTasks);
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error?.message || 'Failed to fetch tasks');
+      }
+
+      const data = await response.json();
+      const backendTasks: Task[] = data.tasks.map((t: any) => ({
+        id: t.id.toString(),
+        title: t.title,
+        description: t.description,
+        completed: t.completed,
+        createdAt: new Date(t.created_at),
+        updatedAt: new Date(t.updated_at),
+        userId: t.user_id,
+      }));
+      setTasks(backendTasks);
     } catch (err: any) {
       setError(err.message || 'Failed to fetch tasks');
     } finally {

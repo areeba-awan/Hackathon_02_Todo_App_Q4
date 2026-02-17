@@ -4,9 +4,44 @@ import ProtectedRoute from '@/components/protected-route';
 import MainLayout from '@/components/main-layout';
 import { useAuth } from '@/lib/auth-provider';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 export default function DashboardPage() {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
+  const [taskCount, setTaskCount] = useState(0);
+  const [completedCount, setCompletedCount] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchTasks = async () => {
+      try {
+        const response = await fetch(`${API_URL}/api/tasks`, {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+          },
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const tasks = data.tasks || [];
+          setTaskCount(tasks.length);
+          setCompletedCount(tasks.filter((t: any) => t.completed).length);
+        }
+      } catch (error) {
+        console.error('Failed to fetch tasks:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (token) {
+      fetchTasks();
+    }
+  }, [token]);
 
   return (
     <ProtectedRoute>
@@ -33,7 +68,9 @@ export default function DashboardPage() {
                       <dl>
                         <dt className="text-sm font-medium text-blue-800 dark:text-blue-300 truncate">Your Tasks</dt>
                         <dd className="flex items-baseline">
-                          <div className="text-2xl font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">0</div>
+                          <div className="text-2xl font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                            {loading ? '-' : taskCount}
+                          </div>
                         </dd>
                       </dl>
                     </div>
@@ -53,7 +90,9 @@ export default function DashboardPage() {
                       <dl>
                         <dt className="text-sm font-medium text-green-800 dark:text-green-300 truncate">Completed Tasks</dt>
                         <dd className="flex items-baseline">
-                          <div className="text-2xl font-semibold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">0</div>
+                          <div className="text-2xl font-semibold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                            {loading ? '-' : completedCount}
+                          </div>
                         </dd>
                       </dl>
                     </div>

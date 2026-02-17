@@ -3,6 +3,7 @@ from typing import Optional
 import jwt
 import os
 import hmac
+import bcrypt
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -16,6 +17,28 @@ if not BETTER_AUTH_SECRET:
 
 # Clock skew tolerance in seconds (60 seconds)
 CLOCK_SKEW = 60
+
+
+def hash_password(password: str) -> str:
+    """Hash a password using bcrypt."""
+    salt = bcrypt.gensalt()
+    hashed = bcrypt.hashpw(password.encode('utf-8'), salt)
+    return hashed.decode('utf-8')
+
+
+def verify_password(password: str, hashed_password: str) -> bool:
+    """Verify a password against a hash."""
+    return bcrypt.checkpw(password.encode('utf-8'), hashed_password.encode('utf-8'))
+
+
+def create_access_token(user_id: str, email: str) -> str:
+    """Create a JWT access token for a user."""
+    payload = {
+        "user_id": user_id,
+        "email": email,
+    }
+    token = jwt.encode(payload, BETTER_AUTH_SECRET, algorithm="HS256")
+    return token
 
 
 async def get_current_user(authorization: Optional[str] = Header(None)) -> str:

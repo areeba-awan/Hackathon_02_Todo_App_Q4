@@ -115,7 +115,9 @@ async def health_check():
 # =============================================================================
 
 from routes.tasks import router as tasks_router
+from routes.auth import router as auth_router
 
+app.include_router(auth_router)
 app.include_router(tasks_router)
 
 # =============================================================================
@@ -131,3 +133,12 @@ async def root():
         "docs": "/docs",
         "health": "/health"
     }
+
+
+# =============================================================================
+# Run Server
+# =============================================================================
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
