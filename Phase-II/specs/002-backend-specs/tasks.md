@@ -68,12 +68,12 @@ Phase 1 (Setup) → Phase 2 (Foundation) → Phase 3 (US1) → Phase 4 (US2) →
 
 **Tasks**:
 
-- [ ] T001 Create backend directory structure (backend/, backend/routes/)
-- [ ] T002 Create requirements.txt with dependencies (fastapi, uvicorn, sqlmodel, psycopg2-binary, PyJWT, python-dotenv)
-- [ ] T003 Create .gitignore for Python projects (venv, __pycache__, .env, etc.)
-- [ ] T004 Create .env.example template (DATABASE_URL, BETTER_AUTH_SECRET, FRONTEND_URL)
-- [ ] T005 [P] Create main.py with basic FastAPI app initialization
-- [ ] T006 [P] Create db.py with database connection setup
+- [X] T001 Create backend directory structure (backend/, backend/routes/)
+- [X] T002 Create requirements.txt with dependencies (fastapi, uvicorn, sqlmodel, psycopg2-binary, PyJWT, python-dotenv)
+- [X] T003 Create .gitignore for Python projects (venv, __pycache__, .env, etc.)
+- [X] T004 Create .env.example template (DATABASE_URL, BETTER_AUTH_SECRET, FRONTEND_URL)
+- [X] T005 [P] Create main.py with basic FastAPI app initialization
+- [X] T006 [P] Create db.py with database connection setup
 
 **Expected Outcome**: Empty project structure ready for implementation
 
@@ -85,14 +85,14 @@ Phase 1 (Setup) → Phase 2 (Foundation) → Phase 3 (US1) → Phase 4 (US2) →
 
 **Tasks**:
 
-- [ ] T007 Implement database session dependency in db.py (get_session generator)
-- [ ] T008 Create models.py with Task SQLModel entity (id, user_id, title, description, completed, created_at, updated_at)
-- [ ] T009 Create schemas.py with Pydantic schemas (TaskCreate, TaskUpdate, TaskResponse, TaskListResponse, ErrorResponse)
-- [ ] T010 Implement JWT verification dependency in auth.py (get_current_user function)
-- [ ] T011 Add constant-time signature comparison using hmac.compare_digest
-- [ ] T012 Add clock skew tolerance (60 seconds) to token expiration check
-- [ ] T013 Configure CORS middleware in main.py (allow FRONTEND_URL, methods, headers)
-- [ ] T014 Create database initialization script to create tasks table
+- [X] T007 Implement database session dependency in db.py (get_session generator)
+- [X] T008 Create models.py with Task SQLModel entity (id, user_id, title, description, completed, created_at, updated_at)
+- [X] T009 Create schemas.py with Pydantic schemas (TaskCreate, TaskUpdate, TaskResponse, TaskListResponse, ErrorResponse)
+- [X] T010 Implement JWT verification dependency in auth.py (get_current_user function)
+- [X] T011 Add constant-time signature comparison using hmac.compare_digest
+- [X] T012 Add clock skew tolerance (60 seconds) to token expiration check
+- [X] T013 Configure CORS middleware in main.py (allow FRONTEND_URL, methods, headers)
+- [X] T014 Create database initialization script to create tasks table
 
 **Expected Outcome**: Reusable dependencies (DB session, auth) and models ready for route implementation
 
@@ -108,14 +108,14 @@ Phase 1 (Setup) → Phase 2 (Foundation) → Phase 3 (US1) → Phase 4 (US2) →
 
 **Tasks**:
 
-- [ ] T015 [P] [US1] Create routes/tasks.py with APIRouter setup
-- [ ] T016 [P] [US1] Import dependencies in routes/tasks.py (get_session, get_current_user, Task, schemas)
-- [ ] T017 [US1] Implement GET /api/tasks endpoint (list all tasks for authenticated user)
-- [ ] T018 [US1] Add optional completed query parameter filter to GET /api/tasks
-- [ ] T019 [US1] Ensure query filters by user_id from authenticated context
-- [ ] T020 [US1] Return TaskListResponse with 200 status
-- [ ] T021 [US1] Add 401 Unauthorized error response for invalid/missing token
-- [ ] T022 [US1] Include routes/tasks.py in main.py app.include_router()
+- [X] T015 [P] [US1] Create routes/tasks.py with APIRouter setup
+- [X] T016 [P] [US1] Import dependencies in routes/tasks.py (get_session, get_current_user, Task, schemas)
+- [X] T017 [US1] Implement GET /api/tasks endpoint (list all tasks for authenticated user)
+- [X] T018 [US1] Add optional completed query parameter filter to GET /api/tasks
+- [X] T019 [US1] Ensure query filters by user_id from authenticated context
+- [X] T020 [US1] Return TaskListResponse with 200 status
+- [X] T021 [US1] Add 401 Unauthorized error response for invalid/missing token
+- [X] T022 [US1] Include routes/tasks.py in main.py app.include_router()
 
 **Expected Outcome**: Users can list their own tasks only, with proper authentication
 
@@ -131,25 +131,25 @@ Phase 1 (Setup) → Phase 2 (Foundation) → Phase 3 (US1) → Phase 4 (US2) →
 
 **Tasks**:
 
-- [ ] T023 [P] [US2] Implement POST /api/tasks endpoint (create new task)
-- [ ] T024 [US2] Validate TaskCreate schema (title required, 1-200 chars)
-- [ ] T025 [US2] Create task with user_id from auth context, completed=False, timestamps
-- [ ] T026 [US2] Return TaskResponse with 201 status
-- [ ] T027 [P] [US2] Implement GET /api/tasks/{id} endpoint (get single task)
-- [ ] T028 [US2] Query task WHERE id AND user_id match
-- [ ] T029 [US2] Return 404 if task not found or belongs to different user
-- [ ] T030 [US2] Return TaskResponse with 200 status
-- [ ] T031 [P] [US2] Implement PUT /api/tasks/{id} endpoint (full update)
-- [ ] T032 [US2] Validate TaskUpdate schema (title, description, completed required)
-- [ ] T033 [US2] Update task and updated_at timestamp
-- [ ] T034 [US2] Return updated TaskResponse with 200 status
-- [ ] T035 [P] [US2] Implement DELETE /api/tasks/{id} endpoint
-- [ ] T036 [US2] Verify task ownership before deletion
-- [ ] T037 [US2] Return 204 No Content on success
-- [ ] T038 [P] [US2] Implement PATCH /api/tasks/{id}/complete endpoint (toggle completion)
-- [ ] T039 [US2] Toggle completed boolean (NOT completed)
-- [ ] T040 [US2] Update updated_at timestamp
-- [ ] T041 [US2] Return updated TaskResponse with 200 status
+- [X] T023 [P] [US2] Implement POST /api/tasks endpoint (create new task)
+- [X] T024 [US2] Validate TaskCreate schema (title required, 1-200 chars)
+- [X] T025 [US2] Create task with user_id from auth context, completed=False, timestamps
+- [X] T026 [US2] Return TaskResponse with 201 status
+- [X] T027 [P] [US2] Implement GET /api/tasks/{id} endpoint (get single task)
+- [X] T028 [US2] Query task WHERE id AND user_id match
+- [X] T029 [US2] Return 404 if task not found or belongs to different user
+- [X] T030 [US2] Return TaskResponse with 200 status
+- [X] T031 [P] [US2] Implement PUT /api/tasks/{id} endpoint (full update)
+- [X] T032 [US2] Validate TaskUpdate schema (title, description, completed required)
+- [X] T033 [US2] Update task and updated_at timestamp
+- [X] T034 [US2] Return updated TaskResponse with 200 status
+- [X] T035 [P] [US2] Implement DELETE /api/tasks/{id} endpoint
+- [X] T036 [US2] Verify task ownership before deletion
+- [X] T037 [US2] Return 204 No Content on success
+- [X] T038 [P] [US2] Implement PATCH /api/tasks/{id}/complete endpoint (toggle completion)
+- [X] T039 [US2] Toggle completed boolean (NOT completed)
+- [X] T040 [US2] Update updated_at timestamp
+- [X] T041 [US2] Return updated TaskResponse with 200 status
 
 **Expected Outcome**: Full CRUD operations for task management with user isolation
 
@@ -165,11 +165,11 @@ Phase 1 (Setup) → Phase 2 (Foundation) → Phase 3 (US1) → Phase 4 (US2) →
 
 **Tasks**:
 
-- [ ] T042 [P] [US3] Create custom exception handler for HTTPException in main.py
-- [ ] T043 [US3] Format errors as {"error": {"code": "...", "message": "...", "details": {...}}}
-- [ ] T044 [US3] Map error codes: UNAUTHORIZED (401), NOT_FOUND (404), VALIDATION_ERROR (422)
-- [ ] T045 [US3] Add field-specific validation error details for 422 responses
-- [ ] T046 [US3] Implement global validation exception handler for Pydantic/SQLModel errors
+- [X] T042 [P] [US3] Create custom exception handler for HTTPException in main.py
+- [X] T043 [US3] Format errors as {"error": {"code": "...", "message": "...", "details": {...}}}
+- [X] T044 [US3] Map error codes: UNAUTHORIZED (401), NOT_FOUND (404), VALIDATION_ERROR (422)
+- [X] T045 [US3] Add field-specific validation error details for 422 responses
+- [X] T046 [US3] Implement global validation exception handler for Pydantic/SQLModel errors
 
 **Expected Outcome**: Consistent, clear error responses across all endpoints
 
@@ -182,10 +182,10 @@ Phase 1 (Setup) → Phase 2 (Foundation) → Phase 3 (US1) → Phase 4 (US2) →
 **Tasks**:
 
 - [ ] T047 [P] Test full integration with frontend (CORS, JWT format, response structure)
-- [ ] T048 Verify all endpoints require JWT authentication
-- [ ] T049 Verify user isolation on all queries (inspect generated SQL)
+- [X] T048 Verify all endpoints require JWT authentication
+- [X] T049 Verify user isolation on all queries (inspect generated SQL)
 - [ ] T050 Test concurrent multi-user scenarios (no data leakage)
-- [ ] T051 Verify error responses match spec format
+- [X] T051 Verify error responses match spec format
 - [ ] T052 Create production deployment notes (gunicorn, env vars, HTTPS)
 - [ ] T053 Verify constitution compliance (all 14 principles)
 - [ ] T054 Update quickstart.md with working examples
@@ -196,31 +196,35 @@ Phase 1 (Setup) → Phase 2 (Foundation) → Phase 3 (US1) → Phase 4 (US2) →
 
 ## Task Summary
 
-| Phase | Description | Task Count | Parallel Tasks |
-|-------|-------------|------------|----------------|
-| Phase 1 | Project Setup | 6 | 2 |
-| Phase 2 | Foundational Layer | 8 | 0 |
-| Phase 3 | US1: Secure Access | 8 | 2 |
-| Phase 4 | US2: Task Management | 19 | 5 |
-| Phase 5 | US3: Error Feedback | 5 | 1 |
-| Phase 6 | Polish & Validation | 8 | 1 |
-| **Total** | | **54** | **11** |
+| Phase | Description | Total | Completed | Remaining |
+|-------|-------------|-------|-----------|-----------|
+| Phase 1 | Project Setup | 6 | 6 | 0 |
+| Phase 2 | Foundational Layer | 8 | 8 | 0 |
+| Phase 3 | US1: Secure Access | 8 | 8 | 0 |
+| Phase 4 | US2: Task Management | 19 | 19 | 0 |
+| Phase 5 | US3: Error Feedback | 5 | 5 | 0 |
+| Phase 6 | Polish & Validation | 8 | 3 | 5 |
+| **Total** | | **54** | **49** | **5** |
+
+**Completion Status**: 91% complete (49/54 tasks)
 
 ---
 
 ## MVP Definition
 
 **Minimum Viable Product** (Phases 1-3 + minimal Phase 4):
-- T001-T014: Setup and foundation
-- T015-T022: US1 (list tasks with auth)
-- T023-T026: US2 (create task only)
+- T001-T014: Setup and foundation ✅
+- T015-T022: US1 (list tasks with auth) ✅
+- T023-T026: US2 (create task only) ✅
 
 **MVP Testable Criteria**:
-- User can authenticate via JWT
-- User can list their own tasks only
-- User can create new tasks
-- Unauthorized access returns 401
-- Cross-user access returns 404
+- User can authenticate via JWT ✅
+- User can list their own tasks only ✅
+- User can create new tasks ✅
+- Unauthorized access returns 401 ✅
+- Cross-user access returns 404 ✅
+
+**MVP Status**: ✅ COMPLETE
 
 ---
 
