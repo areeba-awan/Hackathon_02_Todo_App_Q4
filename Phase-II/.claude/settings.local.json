@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)",
+      "Bash(python -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(poetry check)",
+      "Bash(python -c \"import fastapi, sqlmodel, uvicorn; print\\(''Backend dependencies available''\\)\")",
+      "Bash(dir src /s)",
+      "Bash(python -c \"from src.main import app; print\\(''App imported successfully''\\)\")",
+      "Bash(findstr -i postgres)",
+      "Bash(findstr -i \"postgres\\\\|psycopg\\\\|async\")",
+      "Bash(pip install asyncpg)",
+      "Bash(python -m uvicorn src.main:app --reload --port 8000)",
+      "Bash(npm run dev)",
+      "Bash(dir srcapp /s)",
+      "Bash(dir \"src\\\\app\" /s)",
+      "Bash(dir \"src\\\\app\\\\auth\" /s)",
+      "Bash(dir \"src\\\\app\\\\\\(auth\\\\\\)\" /s)",
+      "Bash(dir)",
+      "Bash(dir srcapp)",
+      "Bash(ls -la src/app/\\\\\\(auth\\\\\\)/)",
+      "Bash(ls -la src/app/\\\\\\(auth\\\\\\)/login/ src/app/\\\\\\(auth\\\\\\)/signup/)",
+      "Bash(npm install framer-motion)",
+      "Bash(python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000)"
+    ]
+  }
+}

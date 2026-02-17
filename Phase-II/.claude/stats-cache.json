@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "lastComputedDate": "2026-02-01",
+  "dailyActivity": [
+    {
+      "date": "2026-01-20",
+      "messageCount": 757,
+      "sessionCount": 5,
+      "toolCallCount": 68
+    },
+    {
+      "date": "2026-01-21",
+      "messageCount": 7,
+      "sessionCount": 1,
+      "toolCallCount": 0
+    },
+    {
+      "date": "2026-01-24",
+      "messageCount": 2,
+      "sessionCount": 1,
+      "toolCallCount": 0
+    },
+    {
+      "date": "2026-01-30",
+      "messageCount": 590,
+      "sessionCount": 3,
+      "toolCallCount": 111
+    },
+    {
+      "date": "2026-01-31",
+      "messageCount": 17,
+      "sessionCount": 2,
+      "toolCallCount": 0
+    }
+  ],
+  "dailyModelTokens": [],
+  "modelUsage": {
+    "qwen3-coder-plus": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0,
+      "contextWindow": 0,
+      "maxOutputTokens": 0
+    }
+  },
+  "totalSessions": 12,
+  "totalMessages": 1373,
+  "longestSession": {
+    "sessionId": "0f468670-6a51-4e93-8dc1-b81057e5a870",
+    "duration": 14510919,
+    "messageCount": 583,
+    "timestamp": "2026-01-30T15:16:51.285Z"
+  },
+  "firstSessionDate": "2026-01-20T16:38:21.290Z",
+  "hourCounts": {
+    "16": 1,
+    "19": 1,
+    "20": 2,
+    "21": 7,
+    "22": 1
+  },
+  "totalSpeculationTimeSavedMs": 0
+}

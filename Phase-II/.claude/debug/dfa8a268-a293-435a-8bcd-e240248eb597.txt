@@ -1,0 +1,218 @@
+2026-02-02T15:02:07.201Z [DEBUG] [init] configureGlobalMTLS starting
+2026-02-02T15:02:07.202Z [DEBUG] [init] configureGlobalMTLS complete
+2026-02-02T15:02:07.202Z [DEBUG] [init] configureGlobalAgents starting
+2026-02-02T15:02:07.203Z [DEBUG] [init] configureGlobalAgents complete
+2026-02-02T15:02:07.266Z [DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+2026-02-02T15:02:07.307Z [DEBUG] Applying permission update: Adding 54 allow rule(s) to destination 'localSettings': ["Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)","Bash(python -c \"import sys; print\\(sys.version\\)\")","Bash(poetry check)","Bash(python -c \"import fastapi, sqlmodel, uvicorn; print\\(''Backend dependencies available''\\)\")","Bash(dir src /s)","Bash(python -c \"from src.main import app; print\\(''App imported successfully''\\)\")","Bash(findstr -i postgres)","Bash(findstr -i \"postgres\\\\|psycopg\\\\|async\")","Bash(pip install asyncpg)","Bash(python -m uvicorn src.main:app --reload --port 8000)","Bash(npm run dev)","Bash(dir srcapp /s)","Bash(dir \"src\\\\app\" /s)","Bash(dir \"src\\\\app\\\\auth\" /s)","Bash(dir \"src\\\\app\\\\\\(auth\\\\\\)\" /s)","Bash(dir)","Bash(dir srcapp)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/login/ src/app/\\\\\\(auth\\\\\\)/signup/)","Bash(npm install framer-motion)","Bash(python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000)","Bash(dir D:Quarter 4 Agentic AIHackathon 2 Todo AppPhase-IIbackend)","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\backend\")","Bash(findstr /M \"fastapi uvicorn sqlalchemy\" \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\backend\"/*.py)","Bash(pip --version)","Bash(pip install -e .)","Bash(python init_db.py)","Bash(python -m uvicorn main:app --host 127.0.0.1 --port 8000)","Bash(findstr \"\\\\.env\")","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\")","Bash(dir \"..\\\\..\\\\.env\")","Bash(echo DATABASE_URL=sqlite:///./todo_app.db)","Bash(python debug_db.py)","Bash(taskkill /PID 8032 /F)","Bash(netstat -ano)","Bash(findstr :8000)","Bash(powershell -Command \"Stop-Process -Id 8032 -Force\")","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\frontend\\\\package.json\")","Bash(npm install)","Bash(tasklist)","Bash(findstr node)","Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000,3001 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_-Force -ErrorAction SilentlyContinue }\")","Bash(del \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\frontend\\\\.next\\\\dev\\\\lock\")","Bash(npx next dev)","Bash(taskkill /F /PID 13884)","Bash(powershell -Command \"Stop-Process -Id 13884 -Force -ErrorAction SilentlyContinue\")","Bash(taskkill /F /PID 10472)","Bash(powershell -Command \"Stop-Process -Id 10472 -Force -ErrorAction SilentlyContinue\")","Bash(taskkill /F /IM node.exe)","Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_-Force }\")","Bash(taskkill /F /PID 18012)","Bash(findstr :3000)","Bash(taskkill /F /PID 10816)","Bash(powershell -Command \"Stop-Process -Id 10816 -Force\")"]
+2026-02-02T15:02:07.308Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-02-02T15:02:07.320Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-02-02T15:02:07.322Z [DEBUG] [STARTUP] Running setup()...
+2026-02-02T15:02:07.324Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-02-02T15:02:07.331Z [DEBUG] Loading skills from: managed=C:\ProgramData\ClaudeCode\.claude\skills, user=C:\Users\lenovo\.claude\skills, project=[D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\skills]
+2026-02-02T15:02:07.338Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at ib6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:26078)
+    at T7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:27809)
+    at qOK (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:118:1169)
+2026-02-02T15:02:07.338Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at HGA (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1813:21866)
+    at gN4 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1813:22749)
+    at Object.callback (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:6357:507)
+2026-02-02T15:02:07.338Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at ib6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:26078)
+    at T7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:27809)
+    at ok1 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:404:1035)
+2026-02-02T15:02:07.338Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at ib6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:26078)
+    at T7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:27809)
+    at rk1 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:404:1640)
+2026-02-02T15:02:07.338Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at ib6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:26078)
+    at T7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:27809)
+    at fRA (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:3624:10969)
+2026-02-02T15:02:07.338Z [DEBUG] Error log sink initialized
+2026-02-02T15:02:07.467Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-02-02T15:02:07.467Z [DEBUG] Total plugin skills loaded: 0
+2026-02-02T15:02:07.467Z [DEBUG] Total plugin commands loaded: 0
+2026-02-02T15:02:07.468Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-02-02T15:02:07.468Z [DEBUG] [STARTUP] setup() completed in 146ms
+2026-02-02T15:02:07.468Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-02-02T15:02:07.987Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default
+2026-02-02T15:02:08.012Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=C:\Users\lenovo\AppData\Roaming\npm\node_modules\@anthropic-ai\claude-code\vendor\ripgrep\x64-win32\rg.exe)
+2026-02-02T15:02:08.022Z [DEBUG] [Claude in Chrome] Found edge profiles: Default
+2026-02-02T15:02:08.069Z [DEBUG] Total plugin agents loaded: 0
+2026-02-02T15:02:08.077Z [DEBUG] Loaded 13 unique skills (managed: 0, user: 0, project: 0, legacy commands: 13)
+2026-02-02T15:02:08.078Z [DEBUG] getSkills returning: 13 skill dir commands, 0 plugin skills, 1 bundled skills
+2026-02-02T15:02:08.081Z [DEBUG] [STARTUP] Commands and agents loaded in 613ms
+2026-02-02T15:02:08.081Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-02-02T15:02:08.084Z [DEBUG] [render] initLayout starting
+2026-02-02T15:02:08.084Z [DEBUG] Layout engine: yoga
+2026-02-02T15:02:08.121Z [DEBUG] [Claude in Chrome] Found opera profiles: Default
+2026-02-02T15:02:08.123Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-02-02T15:02:08.133Z [DEBUG] [render] initLayout complete
+2026-02-02T15:02:08.141Z [DEBUG] [render] first ink render: 4111ms since process start
+2026-02-02T15:02:08.154Z [DEBUG] [keybindings] KeybindingSetup initialized with 99 bindings, 0 warnings
+2026-02-02T15:02:08.204Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-02-02T15:02:08.532Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-02-02T15:02:08.599Z [DEBUG] [STARTUP] showSetupScreens() completed in 518ms
+2026-02-02T15:02:08.599Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-02-02T15:02:08.600Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-02-02T15:02:08.600Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-02-02T15:02:08.604Z [DEBUG] Total LSP servers loaded: 0
+2026-02-02T15:02:08.604Z [DEBUG] [STARTUP] MCP configs loaded in 1296ms
+2026-02-02T15:02:08.628Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-02-02T15:02:08.653Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.20456.1770044528653
+2026-02-02T15:02:08.653Z [DEBUG] Preserving file permissions: 100666
+2026-02-02T15:02:08.655Z [DEBUG] Temp file written successfully, size: 4501 bytes
+2026-02-02T15:02:08.655Z [DEBUG] Applied original permissions to temp file
+2026-02-02T15:02:08.655Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.20456.1770044528653 to C:\Users\lenovo\.claude.json
+2026-02-02T15:02:08.656Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-02-02T15:02:08.675Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-02-02T15:02:08.675Z [DEBUG] LSP manager initialized with 0 servers
+2026-02-02T15:02:08.676Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-02-02T15:02:08.676Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-02-02T15:02:08.681Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-02-02T15:02:08.681Z [DEBUG] Found 0 hook matchers in settings
+2026-02-02T15:02:08.681Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-02-02T15:02:08.681Z [DEBUG] LSP server manager initialized successfully
+2026-02-02T15:02:08.682Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-02-02T15:02:08.687Z [DEBUG] [render] initLayout starting
+2026-02-02T15:02:08.687Z [DEBUG] [render] initLayout complete
+2026-02-02T15:02:08.689Z [DEBUG] [render] first ink render: 4659ms since process start
+2026-02-02T15:02:08.735Z [DEBUG] Watching for changes in setting files D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\settings.json, D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\settings.local.json...
+2026-02-02T15:02:08.862Z [DEBUG] Git remote URL: https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-02-02T15:02:08.863Z [DEBUG] Parsed repository: areeba-awan/Hackathon_2_Todo_App_Q4 from https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-02-02T15:02:08.863Z [DEBUG] Parsed repository: areeba-awan/Hackathon_2_Todo_App_Q4 from URL: https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-02-02T15:02:08.864Z [DEBUG] Path D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II already tracked for repo areeba-awan/hackathon_2_todo_app_q4
+2026-02-02T15:02:08.945Z [DEBUG] Policy limits: Fetched successfully
+2026-02-02T15:02:08.947Z [DEBUG] Remote settings: No settings found (404)
+2026-02-02T15:02:08.947Z [DEBUG] Programmatic settings change notification for policySettings
+2026-02-02T15:02:08.947Z [DEBUG] Plugin hooks: reloading due to policySettings change
+2026-02-02T15:02:08.984Z [DEBUG] Settings changed from policySettings, updating AppState
+2026-02-02T15:02:09.008Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 54 rule(s): ["Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)","Bash(python -c \"import sys; print\\(sys.version\\)\")","Bash(poetry check)","Bash(python -c \"import fastapi, sqlmodel, uvicorn; print\\(''Backend dependencies available''\\)\")","Bash(dir src /s)","Bash(python -c \"from src.main import app; print\\(''App imported successfully''\\)\")","Bash(findstr -i postgres)","Bash(findstr -i \"postgres\\\\|psycopg\\\\|async\")","Bash(pip install asyncpg)","Bash(python -m uvicorn src.main:app --reload --port 8000)","Bash(npm run dev)","Bash(dir srcapp /s)","Bash(dir \"src\\\\app\" /s)","Bash(dir \"src\\\\app\\\\auth\" /s)","Bash(dir \"src\\\\app\\\\\\(auth\\\\\\)\" /s)","Bash(dir)","Bash(dir srcapp)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/login/ src/app/\\\\\\(auth\\\\\\)/signup/)","Bash(npm install framer-motion)","Bash(python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000)","Bash(dir D:Quarter 4 Agentic AIHackathon 2 Todo AppPhase-IIbackend)","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\backend\")","Bash(findstr /M \"fastapi uvicorn sqlalchemy\" \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\backend\"/*.py)","Bash(pip --version)","Bash(pip install -e .)","Bash(python init_db.py)","Bash(python -m uvicorn main:app --host 127.0.0.1 --port 8000)","Bash(findstr \"\\\\.env\")","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\")","Bash(dir \"..\\\\..\\\\.env\")","Bash(echo DATABASE_URL=sqlite:///./todo_app.db)","Bash(python debug_db.py)","Bash(taskkill /PID 8032 /F)","Bash(netstat -ano)","Bash(findstr :8000)","Bash(powershell -Command \"Stop-Process -Id 8032 -Force\")","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\frontend\\\\package.json\")","Bash(npm install)","Bash(tasklist)","Bash(findstr node)","Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000,3001 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_-Force -ErrorAction SilentlyContinue }\")","Bash(del \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\frontend\\\\.next\\\\dev\\\\lock\")","Bash(npx next dev)","Bash(taskkill /F /PID 13884)","Bash(powershell -Command \"Stop-Process -Id 13884 -Force -ErrorAction SilentlyContinue\")","Bash(taskkill /F /PID 10472)","Bash(powershell -Command \"Stop-Process -Id 10472 -Force -ErrorAction SilentlyContinue\")","Bash(taskkill /F /IM node.exe)","Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_-Force }\")","Bash(taskkill /F /PID 18012)","Bash(findstr :3000)","Bash(taskkill /F /PID 10816)","Bash(powershell -Command \"Stop-Process -Id 10816 -Force\")"]
+2026-02-02T15:02:09.008Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-02-02T15:02:09.009Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-02-02T15:02:09.086Z [DEBUG] [keybindings] KeybindingSetup initialized with 99 bindings, 0 warnings
+2026-02-02T15:02:09.295Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-02-02T15:02:09.295Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-02-02T15:02:09.312Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-02-02T15:02:09.319Z [DEBUG] performStartupChecks called
+2026-02-02T15:02:09.320Z [DEBUG] Starting background plugin installations
+2026-02-02T15:02:09.322Z [DEBUG] performBackgroundPluginInstallations called
+2026-02-02T15:02:09.395Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-02-02T15:02:09.405Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-02-02T15:02:09.405Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-02-02T15:02:09.405Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-02-02T15:02:09.476Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-02-02T15:02:09.477Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-02-02T15:02:09.484Z [DEBUG] Watching for changes in skill/command directories: D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\skills, D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\commands...
+2026-02-02T15:02:09.659Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.20456.1770044529659
+2026-02-02T15:02:09.660Z [DEBUG] Preserving file permissions: 100666
+2026-02-02T15:02:09.661Z [DEBUG] Temp file written successfully, size: 4501 bytes
+2026-02-02T15:02:09.661Z [DEBUG] Applied original permissions to temp file
+2026-02-02T15:02:09.661Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.20456.1770044529659 to C:\Users\lenovo\.claude.json
+2026-02-02T15:02:09.662Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-02-02T15:02:14.581Z [DEBUG] npm view failed with code 1
+2026-02-02T15:02:14.581Z [DEBUG] npm stderr: (empty)
+2026-02-02T15:03:17.563Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-02T15:03:17.563Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-02T15:03:17.817Z [DEBUG] Sending 13 skills via attachment (initial, 13 total sent)
+2026-02-02T15:03:17.820Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-02T15:03:17.821Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-02T15:03:17.833Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-02T15:03:17.833Z [DEBUG] Found 0 hook matchers in settings
+2026-02-02T15:03:17.833Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-02T15:03:17.855Z [DEBUG] FileHistory: Added snapshot for dba35dfb-52a8-4174-84a6-b51db1615d2f, tracking 0 files
+2026-02-02T15:03:18.075Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude\todos\dfa8a268-a293-435a-8bcd-e240248eb597-agent-dfa8a268-a293-435a-8bcd-e240248eb597.json.tmp.20456.1770044598075
+2026-02-02T15:03:18.076Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-02-02T15:03:18.077Z [DEBUG] Renaming C:\Users\lenovo\.claude\todos\dfa8a268-a293-435a-8bcd-e240248eb597-agent-dfa8a268-a293-435a-8bcd-e240248eb597.json.tmp.20456.1770044598075 to C:\Users\lenovo\.claude\todos\dfa8a268-a293-435a-8bcd-e240248eb597-agent-dfa8a268-a293-435a-8bcd-e240248eb597.json
+2026-02-02T15:03:18.078Z [DEBUG] File C:\Users\lenovo\.claude\todos\dfa8a268-a293-435a-8bcd-e240248eb597-agent-dfa8a268-a293-435a-8bcd-e240248eb597.json written atomically
+2026-02-02T15:03:18.189Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-02T15:03:18.198Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.27.b56; cc_entrypoint=cli;
+2026-02-02T15:03:18.210Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-02T15:03:18.210Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-02T15:03:18.218Z [DEBUG] Total plugin output styles loaded: 0
+2026-02-02T15:03:18.219Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-02T15:03:18.320Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-02T15:03:18.400Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.27.84b; cc_entrypoint=cli;
+2026-02-02T15:03:18.403Z [ERROR] ReferenceError: ReferenceError: Bun is not defined
+    at Z34 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1602:27809)
+    at f34 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1614:83)
+    at C5q (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4787:6330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4787:3611
+    at async Z$A (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1027:2007)
+    at async pM1 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4787:3581)
+    at async mN (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:3186:5201)
+    at async file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:6197:2795
+    at async file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:6197:4107
+2026-02-02T15:03:18.406Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-02T15:03:18.406Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-02T15:03:18.408Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-02T15:03:18.494Z [DEBUG] Stats cache stale (2026-01-30), processing 2026-01-31 to 2026-02-01 in background
+2026-02-02T15:03:18.595Z [DEBUG] Summarizing all 418 messages (~0 tokens)
+2026-02-02T15:03:18.609Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-02T15:03:18.610Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.27.fee; cc_entrypoint=cli;
+2026-02-02T15:03:18.611Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-02T15:03:18.611Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-02T15:03:18.612Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-02T15:03:18.938Z [DEBUG] Stats cache saved successfully (lastComputedDate: 2026-02-01)
+2026-02-02T15:03:18.938Z [DEBUG] Stats cache updated with 2 new sessions
+2026-02-02T15:03:20.025Z [ERROR] API error (attempt 1/11): 500 500 {"error":{"message":"fetch failedTypeError: fetch failed\n    at node:internal/deps/undici/undici:12345:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11089)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"internal_error"}}
+2026-02-02T15:03:20.073Z [ERROR] API error (attempt 1/11): 500 500 {"error":{"message":"fetch failedTypeError: fetch failed\n    at node:internal/deps/undici/undici:12345:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11089)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"internal_error"}}
+2026-02-02T15:03:21.310Z [ERROR] API error (attempt 1/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"62bcf77f-df29-9f1c-b69b-b830061c830c\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"62bcf77f-df29-9f1c-b69b-b830061c830c\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-02-02T15:03:21.533Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-02-02T15:03:21.533Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-02-02T15:03:21.928Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-02T15:03:21.928Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-02T15:03:21.928Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-02T15:03:25.462Z [ERROR] API error (attempt 2/11): 500 500 {"error":{"message":"fetch failedTypeError: fetch failed\n    at node:internal/deps/undici/undici:12345:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11089)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"internal_error"}}
+2026-02-02T15:03:28.102Z [ERROR] API error (attempt 2/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"6d5c3a41-77f3-9ffe-ad92-1b7be14a0d61\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"6d5c3a41-77f3-9ffe-ad92-1b7be14a0d61\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-02-02T15:03:29.238Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-02T15:03:29.238Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-02T15:03:29.238Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-02T15:03:31.232Z [ERROR] API error (attempt 2/11): 500 500 {"error":{"message":"fetch failedTypeError: fetch failed\n    at node:internal/deps/undici/undici:12345:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11089)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"internal_error"}}
+2026-02-02T15:03:31.542Z [ERROR] API error (attempt 3/11): undefined Request was aborted.
+2026-02-02T15:03:31.546Z [ERROR] Error in non-streaming fallback: Request was aborted.
+2026-02-02T15:03:31.558Z [ERROR] Error: Error: Request was aborted.
+    at gy.makeRequest (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:421:3940)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-02-02T15:03:31.942Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-02-02T15:03:31.942Z [DEBUG] Found 0 hook matchers in settings
+2026-02-02T15:03:31.942Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+2026-02-02T15:03:31.962Z [DEBUG] LSP server manager shut down successfully
+2026-02-02T15:03:32.482Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false

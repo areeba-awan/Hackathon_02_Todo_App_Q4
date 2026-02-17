@@ -1,0 +1,12 @@
+# Environment variables for Todo SaaS Backend
+
+# Better Auth Configuration
+BETTER_AUTH_SECRET=ezZDvDjmc95GM8K2s1ykZOOSt1rTDT2I
+BETTER_AUTH_URL=http://localhost:8000
+
+# Database Configuration
+NEON_DATABASE_URL=postgresql+asyncpg://neondb_owner:npg_OKuTdDGJN6w7@ep-blue-bush-a7pkkeuu-pooler.ap-southeast-2.aws.neon.tech/neondb
+
+# Application Configuration
+APP_ENV=development
+LOG_LEVEL=INFO

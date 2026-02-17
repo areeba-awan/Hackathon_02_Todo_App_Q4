@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Backend specific
+backend/__pycache__/
+backend/venv/
+backend/.env
+backend/*.log
+backend/.pytest_cache/
+backend/.coverage
+
+# Frontend specific
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+frontend/.env
+frontend/.nuxt/
+frontend/dist/
+frontend/build/
+frontend/public/dist/
+frontend/coverage/
+
+# Environment variables
+.env*
+!.env.example
+
+# Local configuration
+*.local
+config/local.yml
+
+# Coverage
+coverage/
+.coverage
+
+# Documentation
+docs/_build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Pytest
+.pytest_cache/
+
+# Alembic
+backend/alembic/versions/

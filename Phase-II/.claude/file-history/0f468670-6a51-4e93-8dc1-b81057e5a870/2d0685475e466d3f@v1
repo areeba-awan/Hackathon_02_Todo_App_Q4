@@ -1,0 +1,26 @@
+from sqlmodel import SQLModel, Field, Relationship
+from typing import Optional, TYPE_CHECKING
+from datetime import datetime
+from backend.models.base import UUIDModel, TimestampMixin
+from backend.models.user import UserBase
+
+if TYPE_CHECKING:
+    from backend.models.user import User
+
+
+class TodoBase(SQLModel):
+    title: str = Field(min_length=1, max_length=200)
+    description: Optional[str] = Field(default=None, max_length=1000)
+    completed: bool = Field(default=False)
+    priority: str = Field(default="medium", regex="^(low|medium|high)$")  # low, medium, high
+    due_date: Optional[datetime] = Field(default=None)
+
+
+class Todo(TodoBase, UUIDModel, TimestampMixin, table=True):
+    """Todo model for the application"""
+    __tablename__ = "todos"
+    
+    user_id: str = Field(foreign_key="users.id", nullable=False)
+    user: "User" = Relationship(back_populates="todos")
+
+

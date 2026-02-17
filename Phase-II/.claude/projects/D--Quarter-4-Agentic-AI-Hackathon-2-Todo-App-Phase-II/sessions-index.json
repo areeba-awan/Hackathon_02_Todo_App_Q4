@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "sessionId": "03218156-931d-421e-b1ef-925e7f2dbab7",
+      "fullPath": "C:\\Users\\lenovo\\.claude\\projects\\D--Quarter-4-Agentic-AI-Hackathon-2-Todo-App-Phase-II\\03218156-931d-421e-b1ef-925e7f2dbab7.jsonl",
+      "fileMtime": 1769274741435,
+      "firstPrompt": "now give me backend and frontend run commands",
+      "summary": "Credit balance is too low",
+      "messageCount": 74,
+      "created": "2026-01-20T16:57:55.899Z",
+      "modified": "2026-01-20T19:53:01.546Z",
+      "gitBranch": "main",
+      "projectPath": "D:\\Quarter 4 Agentic AI\\Hackathon 2 Todo App\\Phase-II",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "0b73102a-fc63-4c80-adc6-8d692ad742b8",
+      "fullPath": "C:\\Users\\lenovo\\.claude\\projects\\D--Quarter-4-Agentic-AI-Hackathon-2-Todo-App-Phase-II\\0b73102a-fc63-4c80-adc6-8d692ad742b8.jsonl",
+      "fileMtime": 1769275094929,
+      "firstPrompt": "hi",
+      "summary": "API Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.",
+      "messageCount": 2,
+      "created": "2026-01-20T16:55:43.108Z",
+      "modified": "2026-01-20T16:55:52.569Z",
+      "gitBranch": "main",
+      "projectPath": "D:\\Quarter 4 Agentic AI\\Hackathon 2 Todo App\\Phase-II",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "a5e57164-0d18-4bd1-aa14-cae534234a22",
+      "fullPath": "C:\\Users\\lenovo\\.claude\\projects\\D--Quarter-4-Agentic-AI-Hackathon-2-Todo-App-Phase-II\\a5e57164-0d18-4bd1-aa14-cae534234a22.jsonl",
+      "fileMtime": 1769275096289,
+      "firstPrompt": "hi",
+      "summary": "API Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.",
+      "messageCount": 2,
+      "created": "2026-01-20T16:57:06.066Z",
+      "modified": "2026-01-20T16:57:07.621Z",
+      "gitBranch": "main",
+      "projectPath": "D:\\Quarter 4 Agentic AI\\Hackathon 2 Todo App\\Phase-II",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "bd03a04d-a606-48f2-9553-0c5f9fca8744",
+      "fullPath": "C:\\Users\\lenovo\\.claude\\projects\\D--Quarter-4-Agentic-AI-Hackathon-2-Todo-App-Phase-II\\bd03a04d-a606-48f2-9553-0c5f9fca8744.jsonl",
+      "fileMtime": 1769275096821,
+      "firstPrompt": "hi hi",
+      "summary": "API Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.",
+      "messageCount": 1,
+      "created": "2026-01-21T11:41:21.924Z",
+      "modified": "2026-01-21T11:41:26.203Z",
+      "gitBranch": "main",
+      "projectPath": "D:\\Quarter 4 Agentic AI\\Hackathon 2 Todo App\\Phase-II",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "f7da6cfb-001e-4977-b482-72cd323952f1",
+      "fullPath": "C:\\Users\\lenovo\\.claude\\projects\\D--Quarter-4-Agentic-AI-Hackathon-2-Todo-App-Phase-II\\f7da6cfb-001e-4977-b482-72cd323952f1.jsonl",
+      "fileMtime": 1769786114062,
+      "firstPrompt": "hi",
+      "summary": "Credit balance is too low",
+      "messageCount": 2,
+      "created": "2026-01-24T17:20:14.866Z",
+      "modified": "2026-01-24T17:20:16.403Z",
+      "gitBranch": "002-todo-backend",
+      "projectPath": "D:\\Quarter 4 Agentic AI\\Hackathon 2 Todo App\\Phase-II",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "f69147f8-ea02-48eb-acc6-0d8621c473b1",
+      "fullPath": "C:\\Users\\lenovo\\.claude\\projects\\D--Quarter-4-Agentic-AI-Hackathon-2-Todo-App-Phase-II\\f69147f8-ea02-48eb-acc6-0d8621c473b1.jsonl",
+      "fileMtime": 1769786208402,
+      "firstPrompt": "hi",
+      "summary": "Credit balance is too low",
+      "messageCount": 2,
+      "created": "2026-01-30T15:15:52.604Z",
+      "modified": "2026-01-30T15:16:16.462Z",
+      "gitBranch": "001-todo-frontend-ui",
+      "projectPath": "D:\\Quarter 4 Agentic AI\\Hackathon 2 Todo App\\Phase-II",
+      "isSidechain": false
+    }
+  ]
+}

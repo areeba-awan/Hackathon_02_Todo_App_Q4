@@ -1,0 +1,391 @@
+2026-01-24T17:18:09.255Z [DEBUG] Watching for changes in setting files D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude...
+2026-01-24T17:18:09.288Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-24T17:18:09.289Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-24T17:18:09.289Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-24T17:18:09.290Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-24T17:18:09.359Z [DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+2026-01-24T17:18:09.394Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-24T17:18:09.395Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-24T17:18:09.395Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-24T17:18:09.417Z [DEBUG] Applying permission update: Adding 21 allow rule(s) to destination 'localSettings': ["Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)","Bash(python -c \"import sys; print\\(sys.version\\)\")","Bash(poetry check)","Bash(python -c \"import fastapi, sqlmodel, uvicorn; print\\(''Backend dependencies available''\\)\")","Bash(dir src /s)","Bash(python -c \"from src.main import app; print\\(''App imported successfully''\\)\")","Bash(findstr -i postgres)","Bash(findstr -i \"postgres\\\\|psycopg\\\\|async\")","Bash(pip install asyncpg)","Bash(python -m uvicorn src.main:app --reload --port 8000)","Bash(npm run dev)","Bash(dir srcapp /s)","Bash(dir \"src\\\\app\" /s)","Bash(dir \"src\\\\app\\\\auth\" /s)","Bash(dir \"src\\\\app\\\\\\(auth\\\\\\)\" /s)","Bash(dir)","Bash(dir srcapp)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/login/ src/app/\\\\\\(auth\\\\\\)/signup/)","Bash(npm install framer-motion)","Bash(python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000)"]
+2026-01-24T17:18:09.418Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-24T17:18:09.423Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-24T17:18:09.423Z [DEBUG] Total LSP servers loaded: 0
+2026-01-24T17:18:09.423Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-01-24T17:18:09.423Z [DEBUG] LSP manager initialized with 0 servers
+2026-01-24T17:18:09.423Z [DEBUG] [STARTUP] MCP configs loaded in 5ms
+2026-01-24T17:18:09.423Z [DEBUG] LSP server manager initialized successfully
+2026-01-24T17:18:09.424Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-01-24T17:18:09.427Z [DEBUG] [STARTUP] Running setup()...
+2026-01-24T17:18:09.437Z [DEBUG] Stats cache is up to date
+2026-01-24T17:18:09.469Z [DEBUG] Loading skills from: managed=C:\ProgramData\ClaudeCode\.claude\skills, user=C:\Users\lenovo\.claude\skills, project=[D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\skills]
+2026-01-24T17:18:09.542Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-01-24T17:18:09.684Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir 'C:\ProgramData\ClaudeCode\.claude\skills'
+    at Module.readdirSync (node:fs:1515:26)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:1766
+    at jI (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:34380)
+    at Object.readdirSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:1736)
+    at FZ1 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1523:369)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1523:4274
+    at B (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:6808)
+    at lz7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4154:4354)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4154:6941
+    at B (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:6808)
+2026-01-24T17:18:09.685Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir 'C:\Users\lenovo\.claude\skills'
+    at Module.readdirSync (node:fs:1515:26)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:1766
+    at jI (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:34380)
+    at Object.readdirSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:1736)
+    at FZ1 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1523:369)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1523:4317
+    at B (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:6808)
+    at lz7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4154:4354)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4154:6941
+    at B (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:6808)
+2026-01-24T17:18:09.685Z [DEBUG] Error log sink initialized
+2026-01-24T17:18:09.731Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude\todos\f7da6cfb-001e-4977-b482-72cd323952f1-agent-f7da6cfb-001e-4977-b482-72cd323952f1.json.tmp.6384.1769275089731
+2026-01-24T17:18:09.733Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-24T17:18:09.733Z [DEBUG] Renaming C:\Users\lenovo\.claude\todos\f7da6cfb-001e-4977-b482-72cd323952f1-agent-f7da6cfb-001e-4977-b482-72cd323952f1.json.tmp.6384.1769275089731 to C:\Users\lenovo\.claude\todos\f7da6cfb-001e-4977-b482-72cd323952f1-agent-f7da6cfb-001e-4977-b482-72cd323952f1.json
+2026-01-24T17:18:09.735Z [DEBUG] File C:\Users\lenovo\.claude\todos\f7da6cfb-001e-4977-b482-72cd323952f1-agent-f7da6cfb-001e-4977-b482-72cd323952f1.json written atomically
+2026-01-24T17:18:09.848Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-24T17:18:09.848Z [DEBUG] Total plugin skills loaded: 0
+2026-01-24T17:18:09.848Z [DEBUG] Total plugin commands loaded: 0
+2026-01-24T17:18:09.849Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-24T17:18:09.915Z [DEBUG] [STARTUP] setup() completed in 487ms
+2026-01-24T17:18:09.915Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-24T17:18:10.570Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=C:\Users\lenovo\AppData\Roaming\npm\node_modules\@anthropic-ai\claude-code\vendor\ripgrep\x64-win32\rg.exe)
+2026-01-24T17:18:10.585Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default
+2026-01-24T17:18:10.640Z [DEBUG] Watching for changes in skill/command directories: D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\skills, D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\commands...
+2026-01-24T17:18:10.890Z [DEBUG] Loaded 13 unique skills (managed: 0, user: 0, project: 0, legacy commands: 13)
+2026-01-24T17:18:10.890Z [DEBUG] getSkills returning: 13 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-24T17:18:10.904Z [DEBUG] Total plugin agents loaded: 0
+2026-01-24T17:18:10.905Z [DEBUG] [STARTUP] Commands and agents loaded in 990ms
+2026-01-24T17:18:10.905Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-01-24T17:18:10.920Z [DEBUG] [render] initYoga starting
+2026-01-24T17:18:11.059Z [DEBUG] [Claude in Chrome] Found edge profiles: Default
+2026-01-24T17:18:11.204Z [DEBUG] [render] initYoga complete
+2026-01-24T17:18:11.263Z [DEBUG] [keybindings] KeybindingSetup initialized with 45 bindings, 0 warnings
+2026-01-24T17:18:11.449Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-01-24T17:18:11.527Z [DEBUG] [STARTUP] showSetupScreens() completed in 622ms
+2026-01-24T17:18:11.616Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-01-24T17:18:11.676Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091676
+2026-01-24T17:18:11.676Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.677Z [DEBUG] Temp file written successfully, size: 2658 bytes
+2026-01-24T17:18:11.678Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.678Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091676 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.679Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:11.751Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-24T17:18:11.751Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T17:18:11.751Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-24T17:18:11.792Z [DEBUG] [render] initYoga starting
+2026-01-24T17:18:11.793Z [DEBUG] Skills and commands included in Skill tool: sp.taskstoissues, sp.tasks, sp.specify, sp.reverse-engineer, sp.plan, sp.phr, sp.implement, sp.git.commit_pr, sp.constitution, sp.clarify, sp.checklist, sp.analyze, sp.adr
+2026-01-24T17:18:11.793Z [DEBUG] [render] initYoga complete
+2026-01-24T17:18:11.802Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T17:18:11.803Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T17:18:11.807Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T17:18:11.885Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091884
+2026-01-24T17:18:11.885Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.886Z [DEBUG] Temp file written successfully, size: 2834 bytes
+2026-01-24T17:18:11.886Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.886Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091884 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.888Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:11.895Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091895
+2026-01-24T17:18:11.895Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.896Z [DEBUG] Temp file written successfully, size: 2870 bytes
+2026-01-24T17:18:11.897Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.897Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091895 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.898Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:11.906Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091906
+2026-01-24T17:18:11.906Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.907Z [DEBUG] Temp file written successfully, size: 2898 bytes
+2026-01-24T17:18:11.921Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.921Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091906 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.922Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:11.931Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091931
+2026-01-24T17:18:11.932Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.933Z [DEBUG] Temp file written successfully, size: 2950 bytes
+2026-01-24T17:18:11.933Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.933Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091931 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.934Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:11.942Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091942
+2026-01-24T17:18:11.942Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.944Z [DEBUG] Temp file written successfully, size: 2989 bytes
+2026-01-24T17:18:11.944Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.944Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091942 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.945Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:11.953Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091953
+2026-01-24T17:18:11.954Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.955Z [DEBUG] Temp file written successfully, size: 3027 bytes
+2026-01-24T17:18:11.955Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.955Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091953 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.956Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:11.974Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091974
+2026-01-24T17:18:11.974Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.978Z [DEBUG] Temp file written successfully, size: 3066 bytes
+2026-01-24T17:18:11.978Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.978Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091974 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.980Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:11.989Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275091989
+2026-01-24T17:18:11.989Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:11.990Z [DEBUG] Temp file written successfully, size: 3096 bytes
+2026-01-24T17:18:11.991Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:11.991Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275091989 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:11.992Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.001Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092001
+2026-01-24T17:18:12.002Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.003Z [DEBUG] Temp file written successfully, size: 3141 bytes
+2026-01-24T17:18:12.003Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.003Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092001 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.005Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.022Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092022
+2026-01-24T17:18:12.024Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.025Z [DEBUG] Temp file written successfully, size: 3186 bytes
+2026-01-24T17:18:12.026Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.026Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092022 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.027Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.036Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092036
+2026-01-24T17:18:12.037Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.038Z [DEBUG] Temp file written successfully, size: 3216 bytes
+2026-01-24T17:18:12.038Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.038Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092036 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.039Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.049Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092049
+2026-01-24T17:18:12.050Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.051Z [DEBUG] Temp file written successfully, size: 3240 bytes
+2026-01-24T17:18:12.051Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.051Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092049 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.052Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.093Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-24T17:18:12.100Z [DEBUG] Summarizing all 2 messages (~0 tokens)
+2026-01-24T17:18:12.114Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-24T17:18:12.123Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092123
+2026-01-24T17:18:12.124Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.125Z [DEBUG] Temp file written successfully, size: 3307 bytes
+2026-01-24T17:18:12.125Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.125Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092123 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.126Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.145Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T17:18:12.145Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T17:18:12.148Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T17:18:12.156Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092156
+2026-01-24T17:18:12.156Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.158Z [DEBUG] Temp file written successfully, size: 3353 bytes
+2026-01-24T17:18:12.158Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.158Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092156 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.160Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.169Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092169
+2026-01-24T17:18:12.170Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.171Z [DEBUG] Temp file written successfully, size: 3391 bytes
+2026-01-24T17:18:12.171Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.171Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092169 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.172Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.196Z [DEBUG] Git remote URL: https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-01-24T17:18:12.197Z [DEBUG] Parsed repository: areeba-awan/Hackathon_2_Todo_App_Q4 from https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-01-24T17:18:12.197Z [DEBUG] Parsed repository: areeba-awan/Hackathon_2_Todo_App_Q4 from URL: https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-01-24T17:18:12.198Z [DEBUG] Path D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II already tracked for repo areeba-awan/hackathon_2_todo_app_q4
+2026-01-24T17:18:12.260Z [DEBUG] [Claude in Chrome] Found opera profiles: Default
+2026-01-24T17:18:12.322Z [DEBUG] [keybindings] KeybindingSetup initialized with 45 bindings, 0 warnings
+2026-01-24T17:18:12.604Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-24T17:18:12.604Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-01-24T17:18:12.717Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-01-24T17:18:12.722Z [DEBUG] performStartupChecks called
+2026-01-24T17:18:12.723Z [DEBUG] Starting background plugin installations
+2026-01-24T17:18:12.725Z [DEBUG] performBackgroundPluginInstallations called
+2026-01-24T17:18:12.881Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-01-24T17:18:12.902Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092902
+2026-01-24T17:18:12.902Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.903Z [DEBUG] Temp file written successfully, size: 3448 bytes
+2026-01-24T17:18:12.904Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.904Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092902 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.904Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.926Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092926
+2026-01-24T17:18:12.927Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.928Z [DEBUG] Temp file written successfully, size: 3521 bytes
+2026-01-24T17:18:12.928Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.928Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092926 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.930Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.938Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092938
+2026-01-24T17:18:12.938Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.939Z [DEBUG] Temp file written successfully, size: 3569 bytes
+2026-01-24T17:18:12.940Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.940Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092938 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.941Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.949Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092949
+2026-01-24T17:18:12.950Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.951Z [DEBUG] Temp file written successfully, size: 3602 bytes
+2026-01-24T17:18:12.952Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.952Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092949 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.953Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:12.959Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-24T17:18:12.961Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-24T17:18:12.961Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-24T17:18:12.970Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275092970
+2026-01-24T17:18:12.971Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:12.972Z [DEBUG] Temp file written successfully, size: 3642 bytes
+2026-01-24T17:18:12.972Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:12.972Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275092970 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:12.973Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:14.018Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-01-24T17:18:14.028Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275094028
+2026-01-24T17:18:14.029Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:14.030Z [DEBUG] Temp file written successfully, size: 3686 bytes
+2026-01-24T17:18:14.030Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:14.030Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275094028 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:14.031Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:14.031Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-01-24T17:18:14.045Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-01-24T17:18:14.134Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-01-24T17:18:14.134Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-01-24T17:18:14.626Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275094626
+2026-01-24T17:18:14.628Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:18:14.631Z [DEBUG] Temp file written successfully, size: 3686 bytes
+2026-01-24T17:18:14.632Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:18:14.632Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275094626 to C:\Users\lenovo\.claude.json
+2026-01-24T17:18:14.633Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:18:14.909Z [ERROR] Error in non-streaming fallback: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+2026-01-24T17:18:14.913Z [ERROR] Error: Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+    at P2.generate (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:918:2078)
+    at Dj.makeStatusError (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:2195)
+    at Dj.makeRequest (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-24T17:18:14.925Z [DEBUG] Generated summary for session 0b73102a-fc63-4c80-adc6-8d692ad742b8: "API Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes."
+2026-01-24T17:18:14.936Z [DEBUG] Summarizing all 2 messages (~0 tokens)
+2026-01-24T17:18:14.938Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-24T17:18:14.955Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T17:18:14.955Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T17:18:14.958Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T17:18:16.277Z [ERROR] Error in non-streaming fallback: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+2026-01-24T17:18:16.278Z [ERROR] Error: Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+    at P2.generate (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:918:2078)
+    at Dj.makeStatusError (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:2195)
+    at Dj.makeRequest (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-24T17:18:16.285Z [DEBUG] Generated summary for session a5e57164-0d18-4bd1-aa14-cae534234a22: "API Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes."
+2026-01-24T17:18:16.288Z [ERROR] Error: Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+    at P2.generate (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:918:2078)
+    at Dj.makeStatusError (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:2195)
+    at Dj.makeRequest (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1166:5019
+    at async file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1107:2222
+    at async b25 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1106:9402)
+    at async M22 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1107:2155)
+    at async ivA (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2501:56)
+    at async J9A (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2501:751)
+2026-01-24T17:18:16.288Z [DEBUG] countTokensWithFallback: API returned null, trying haiku fallback (18 tools)
+2026-01-24T17:18:16.289Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T17:18:16.289Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T17:18:16.289Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T17:18:16.301Z [DEBUG] Summarizing all 2 messages (~0 tokens)
+2026-01-24T17:18:16.302Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-24T17:18:16.319Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T17:18:16.319Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T17:18:16.322Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T17:18:16.808Z [DEBUG] countTokensWithFallback: haiku fallback failed: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+2026-01-24T17:18:16.808Z [ERROR] Error: Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+    at P2.generate (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:918:2078)
+    at Dj.makeStatusError (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:2195)
+    at Dj.makeRequest (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async u22 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1166:5710)
+    at async ivA (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2501:327)
+    at async J9A (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2501:751)
+    at async Da2 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:3007:539)
+2026-01-24T17:18:16.809Z [DEBUG] countToolDefinitionTokens returned null for 18 tools: Task, TaskOutput, Bash, Glob, Grep, ExitPlanMode, Read, Edit, Write, NotebookEdit, WebFetch, TodoWri...
+2026-01-24T17:18:16.816Z [ERROR] Error in non-streaming fallback: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+2026-01-24T17:18:16.817Z [ERROR] Error: Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+    at P2.generate (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:918:2078)
+    at Dj.makeStatusError (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:2195)
+    at Dj.makeRequest (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-24T17:18:16.824Z [DEBUG] Generated summary for session bd03a04d-a606-48f2-9553-0c5f9fca8744: "API Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes."
+2026-01-24T17:18:16.839Z [DEBUG] Session index: added 1, updated 3, removed 0, summaries generated 3 (total: 4)
+2026-01-24T17:18:19.547Z [DEBUG] npm view failed with code 1
+2026-01-24T17:18:19.547Z [DEBUG] npm stderr: (empty)
+2026-01-24T17:20:14.236Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-24T17:20:14.237Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-24T17:20:14.238Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-24T17:20:14.238Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-24T17:20:14.930Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-24T17:20:14.930Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T17:20:14.930Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-24T17:20:14.986Z [DEBUG] FileHistory: Added snapshot for d9d2a488-cf08-4527-991f-00d0f8cd34ea, tracking 0 files
+2026-01-24T17:20:15.207Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-24T17:20:15.220Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T17:20:15.220Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T17:20:15.224Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T17:20:15.227Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-24T17:20:15.350Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275215350
+2026-01-24T17:20:15.351Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:20:15.352Z [DEBUG] Temp file written successfully, size: 3732 bytes
+2026-01-24T17:20:15.352Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:20:15.352Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275215350 to C:\Users\lenovo\.claude.json
+2026-01-24T17:20:15.353Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:20:15.355Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-01-24T17:20:15.414Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-24T17:20:15.414Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-24T17:20:15.414Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-24T17:20:15.996Z [ERROR] Error in non-streaming fallback: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+2026-01-24T17:20:15.996Z [ERROR] Error: Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+    at P2.generate (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:918:2078)
+    at Dj.makeStatusError (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:2195)
+    at Dj.makeRequest (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-24T17:20:16.000Z [ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:66:672
+    at B (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:6808)
+    at J92 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1187:6806)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-24T17:20:16.399Z [ERROR] Error in non-streaming fallback: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+2026-01-24T17:20:16.400Z [ERROR] Error: Error: 400 Your access has been paused - the feedback quality from your account doesn't meet our current threshold. We'll notify you by email if this changes.
+    at P2.generate (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:918:2078)
+    at Dj.makeStatusError (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:2195)
+    at Dj.makeRequest (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:935:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-24T17:20:16.428Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275216427
+2026-01-24T17:20:16.428Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:20:16.429Z [DEBUG] Temp file written successfully, size: 3767 bytes
+2026-01-24T17:20:16.429Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:20:16.430Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275216427 to C:\Users\lenovo\.claude.json
+2026-01-24T17:20:16.431Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:20:16.444Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275216444
+2026-01-24T17:20:16.445Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:20:16.446Z [DEBUG] Temp file written successfully, size: 3813 bytes
+2026-01-24T17:20:16.446Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:20:16.446Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275216444 to C:\Users\lenovo\.claude.json
+2026-01-24T17:20:16.448Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:20:16.561Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-24T17:20:16.561Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T17:20:16.561Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-24T17:20:16.828Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275216827
+2026-01-24T17:20:16.828Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:20:16.829Z [DEBUG] Temp file written successfully, size: 3862 bytes
+2026-01-24T17:20:16.829Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:20:16.829Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275216827 to C:\Users\lenovo\.claude.json
+2026-01-24T17:20:16.831Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:20:16.888Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275216888
+2026-01-24T17:20:16.888Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:20:16.889Z [DEBUG] Temp file written successfully, size: 3900 bytes
+2026-01-24T17:20:16.889Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:20:16.889Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275216888 to C:\Users\lenovo\.claude.json
+2026-01-24T17:20:16.891Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:20:22.666Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.6384.1769275222666
+2026-01-24T17:20:22.666Z [DEBUG] Preserving file permissions: 100666
+2026-01-24T17:20:22.668Z [DEBUG] Temp file written successfully, size: 3925 bytes
+2026-01-24T17:20:22.668Z [DEBUG] Applied original permissions to temp file
+2026-01-24T17:20:22.668Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.6384.1769275222666 to C:\Users\lenovo\.claude.json
+2026-01-24T17:20:22.669Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-24T17:20:22.913Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-24T17:20:22.913Z [DEBUG] Found 0 hook matchers in settings
+2026-01-24T17:20:22.913Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+2026-01-24T17:20:22.955Z [DEBUG] LSP server manager shut down successfully
+2026-01-24T17:20:23.567Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2026-01-24T17:20:23.894Z [DEBUG] BigQuery metrics exported successfully
+2026-01-24T17:20:23.894Z [DEBUG] BigQuery API Response: {
+  "accepted_count": 3,
+  "rejected_count": 0
+}
+2026-01-24T17:20:23.902Z [DEBUG] BigQuery metrics exporter flush complete
+2026-01-24T17:20:23.902Z [DEBUG] BigQuery metrics exporter flush complete
+2026-01-24T17:20:23.902Z [DEBUG] BigQuery metrics exporter shutdown complete

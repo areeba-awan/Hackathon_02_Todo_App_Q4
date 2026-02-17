@@ -1,0 +1,289 @@
+2026-01-31T16:21:30.489Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-31T16:21:30.490Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-31T16:21:30.490Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-31T16:21:30.490Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-31T16:21:30.544Z [DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+2026-01-31T16:21:30.574Z [DEBUG] Applying permission update: Adding 54 allow rule(s) to destination 'localSettings': ["Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)","Bash(python -c \"import sys; print\\(sys.version\\)\")","Bash(poetry check)","Bash(python -c \"import fastapi, sqlmodel, uvicorn; print\\(''Backend dependencies available''\\)\")","Bash(dir src /s)","Bash(python -c \"from src.main import app; print\\(''App imported successfully''\\)\")","Bash(findstr -i postgres)","Bash(findstr -i \"postgres\\\\|psycopg\\\\|async\")","Bash(pip install asyncpg)","Bash(python -m uvicorn src.main:app --reload --port 8000)","Bash(npm run dev)","Bash(dir srcapp /s)","Bash(dir \"src\\\\app\" /s)","Bash(dir \"src\\\\app\\\\auth\" /s)","Bash(dir \"src\\\\app\\\\\\(auth\\\\\\)\" /s)","Bash(dir)","Bash(dir srcapp)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/login/ src/app/\\\\\\(auth\\\\\\)/signup/)","Bash(npm install framer-motion)","Bash(python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000)","Bash(dir D:Quarter 4 Agentic AIHackathon 2 Todo AppPhase-IIbackend)","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\backend\")","Bash(findstr /M \"fastapi uvicorn sqlalchemy\" \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\backend\"/*.py)","Bash(pip --version)","Bash(pip install -e .)","Bash(python init_db.py)","Bash(python -m uvicorn main:app --host 127.0.0.1 --port 8000)","Bash(findstr \"\\\\.env\")","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\")","Bash(dir \"..\\\\..\\\\.env\")","Bash(echo DATABASE_URL=sqlite:///./todo_app.db)","Bash(python debug_db.py)","Bash(taskkill /PID 8032 /F)","Bash(netstat -ano)","Bash(findstr :8000)","Bash(powershell -Command \"Stop-Process -Id 8032 -Force\")","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\frontend\\\\package.json\")","Bash(npm install)","Bash(tasklist)","Bash(findstr node)","Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000,3001 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_-Force -ErrorAction SilentlyContinue }\")","Bash(del \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\frontend\\\\.next\\\\dev\\\\lock\")","Bash(npx next dev)","Bash(taskkill /F /PID 13884)","Bash(powershell -Command \"Stop-Process -Id 13884 -Force -ErrorAction SilentlyContinue\")","Bash(taskkill /F /PID 10472)","Bash(powershell -Command \"Stop-Process -Id 10472 -Force -ErrorAction SilentlyContinue\")","Bash(taskkill /F /IM node.exe)","Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_-Force }\")","Bash(taskkill /F /PID 18012)","Bash(findstr :3000)","Bash(taskkill /F /PID 10816)","Bash(powershell -Command \"Stop-Process -Id 10816 -Force\")"]
+2026-01-31T16:21:30.575Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-31T16:21:30.582Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-01-31T16:21:30.584Z [DEBUG] [STARTUP] Running setup()...
+2026-01-31T16:21:30.586Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-31T16:21:30.592Z [DEBUG] Loading skills from: managed=C:\ProgramData\ClaudeCode\.claude\skills, user=C:\Users\lenovo\.claude\skills, project=[D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\skills]
+2026-01-31T16:21:30.596Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at ib6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:26078)
+    at T7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:27809)
+    at qOK (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:118:1169)
+2026-01-31T16:21:30.596Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at HGA (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1813:21866)
+    at gN4 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1813:22749)
+    at Object.callback (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:6357:507)
+2026-01-31T16:21:30.596Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at ib6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:26078)
+    at T7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:27809)
+    at ok1 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:404:1035)
+2026-01-31T16:21:30.596Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at ib6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:26078)
+    at T7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:27809)
+    at rk1 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:404:1640)
+2026-01-31T16:21:30.596Z [ERROR] Error: Error: ENOENT: no such file or directory, open 'C:\Users\lenovo\.claude\remote-settings.json'
+    at Module.openSync (node:fs:581:18)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:816
+    at yJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:8:40429)
+    at Object.readSync (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:9:750)
+    at SJ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5216:105)
+    at I_ (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:5218:224)
+    at lb6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:25916)
+    at ib6 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:26078)
+    at T7 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:117:27809)
+    at fRA (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:3624:10969)
+2026-01-31T16:21:30.596Z [DEBUG] Error log sink initialized
+2026-01-31T16:21:30.678Z [DEBUG] Using cached index entry for session: 03218156-931d-421e-b1ef-925e7f2dbab7
+2026-01-31T16:21:30.678Z [DEBUG] Using cached index entry for session: f7da6cfb-001e-4977-b482-72cd323952f1
+2026-01-31T16:21:30.678Z [DEBUG] Using cached index entry for session: f69147f8-ea02-48eb-acc6-0d8621c473b1
+2026-01-31T16:21:30.684Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-31T16:21:30.684Z [DEBUG] Total plugin skills loaded: 0
+2026-01-31T16:21:30.684Z [DEBUG] Total plugin commands loaded: 0
+2026-01-31T16:21:30.684Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-31T16:21:31.215Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default
+2026-01-31T16:21:31.236Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=C:\Users\lenovo\AppData\Roaming\npm\node_modules\@anthropic-ai\claude-code\vendor\ripgrep\x64-win32\rg.exe)
+2026-01-31T16:21:31.281Z [DEBUG] [Claude in Chrome] Found edge profiles: Default
+2026-01-31T16:21:31.335Z [DEBUG] Loaded 13 unique skills (managed: 0, user: 0, project: 0, legacy commands: 13)
+2026-01-31T16:21:31.335Z [DEBUG] getSkills returning: 13 skill dir commands, 0 plugin skills, 1 bundled skills
+2026-01-31T16:21:31.341Z [DEBUG] [STARTUP] setup() completed in 757ms
+2026-01-31T16:21:31.341Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-31T16:21:31.350Z [DEBUG] [Claude in Chrome] Found opera profiles: Default
+2026-01-31T16:21:31.351Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-01-31T16:21:31.376Z [DEBUG] Total plugin agents loaded: 0
+2026-01-31T16:21:31.377Z [DEBUG] [STARTUP] Commands and agents loaded in 36ms
+2026-01-31T16:21:31.377Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-01-31T16:21:31.380Z [DEBUG] [render] initLayout starting
+2026-01-31T16:21:31.380Z [DEBUG] Layout engine: yoga
+2026-01-31T16:21:31.430Z [DEBUG] [render] initLayout complete
+2026-01-31T16:21:31.438Z [DEBUG] [render] first ink render: 3640ms since process start
+2026-01-31T16:21:31.450Z [DEBUG] [keybindings] KeybindingSetup initialized with 99 bindings, 0 warnings
+2026-01-31T16:21:31.495Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-31T16:21:31.772Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-01-31T16:21:31.818Z [DEBUG] [STARTUP] showSetupScreens() completed in 441ms
+2026-01-31T16:21:31.819Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-31T16:21:31.819Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-31T16:21:31.819Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-31T16:21:31.824Z [DEBUG] Total LSP servers loaded: 0
+2026-01-31T16:21:31.825Z [DEBUG] [STARTUP] MCP configs loaded in 1250ms
+2026-01-31T16:21:31.848Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-01-31T16:21:31.877Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.5984.1769876491877
+2026-01-31T16:21:31.878Z [DEBUG] Preserving file permissions: 100666
+2026-01-31T16:21:31.879Z [DEBUG] Temp file written successfully, size: 4501 bytes
+2026-01-31T16:21:31.880Z [DEBUG] Applied original permissions to temp file
+2026-01-31T16:21:31.880Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.5984.1769876491877 to C:\Users\lenovo\.claude.json
+2026-01-31T16:21:31.881Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-31T16:21:31.904Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-01-31T16:21:31.904Z [DEBUG] LSP manager initialized with 0 servers
+2026-01-31T16:21:31.905Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-01-31T16:21:31.905Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-01-31T16:21:31.910Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-31T16:21:31.910Z [DEBUG] Found 0 hook matchers in settings
+2026-01-31T16:21:31.910Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-31T16:21:31.910Z [DEBUG] LSP server manager initialized successfully
+2026-01-31T16:21:31.912Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-01-31T16:21:31.916Z [DEBUG] [render] initLayout starting
+2026-01-31T16:21:31.917Z [DEBUG] [render] initLayout complete
+2026-01-31T16:21:31.919Z [DEBUG] [render] first ink render: 4121ms since process start
+2026-01-31T16:21:31.962Z [DEBUG] Watching for changes in setting files D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\settings.json, D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\settings.local.json...
+2026-01-31T16:21:32.081Z [DEBUG] Git remote URL: https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-01-31T16:21:32.082Z [DEBUG] Parsed repository: areeba-awan/Hackathon_2_Todo_App_Q4 from https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-01-31T16:21:32.082Z [DEBUG] Parsed repository: areeba-awan/Hackathon_2_Todo_App_Q4 from URL: https://github.com/areeba-awan/Hackathon_2_Todo_App_Q4.git
+2026-01-31T16:21:32.083Z [DEBUG] Path D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II already tracked for repo areeba-awan/hackathon_2_todo_app_q4
+2026-01-31T16:21:32.198Z [DEBUG] Policy limits: Fetched successfully
+2026-01-31T16:21:32.199Z [DEBUG] Remote settings: No settings found (404)
+2026-01-31T16:21:32.199Z [DEBUG] Programmatic settings change notification for policySettings
+2026-01-31T16:21:32.199Z [DEBUG] Plugin hooks: reloading due to policySettings change
+2026-01-31T16:21:32.228Z [DEBUG] Settings changed from policySettings, updating AppState
+2026-01-31T16:21:32.260Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 54 rule(s): ["Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)","Bash(python -c \"import sys; print\\(sys.version\\)\")","Bash(poetry check)","Bash(python -c \"import fastapi, sqlmodel, uvicorn; print\\(''Backend dependencies available''\\)\")","Bash(dir src /s)","Bash(python -c \"from src.main import app; print\\(''App imported successfully''\\)\")","Bash(findstr -i postgres)","Bash(findstr -i \"postgres\\\\|psycopg\\\\|async\")","Bash(pip install asyncpg)","Bash(python -m uvicorn src.main:app --reload --port 8000)","Bash(npm run dev)","Bash(dir srcapp /s)","Bash(dir \"src\\\\app\" /s)","Bash(dir \"src\\\\app\\\\auth\" /s)","Bash(dir \"src\\\\app\\\\\\(auth\\\\\\)\" /s)","Bash(dir)","Bash(dir srcapp)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/)","Bash(ls -la src/app/\\\\\\(auth\\\\\\)/login/ src/app/\\\\\\(auth\\\\\\)/signup/)","Bash(npm install framer-motion)","Bash(python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000)","Bash(dir D:Quarter 4 Agentic AIHackathon 2 Todo AppPhase-IIbackend)","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\backend\")","Bash(findstr /M \"fastapi uvicorn sqlalchemy\" \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\backend\"/*.py)","Bash(pip --version)","Bash(pip install -e .)","Bash(python init_db.py)","Bash(python -m uvicorn main:app --host 127.0.0.1 --port 8000)","Bash(findstr \"\\\\.env\")","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\")","Bash(dir \"..\\\\..\\\\.env\")","Bash(echo DATABASE_URL=sqlite:///./todo_app.db)","Bash(python debug_db.py)","Bash(taskkill /PID 8032 /F)","Bash(netstat -ano)","Bash(findstr :8000)","Bash(powershell -Command \"Stop-Process -Id 8032 -Force\")","Bash(dir \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\frontend\\\\package.json\")","Bash(npm install)","Bash(tasklist)","Bash(findstr node)","Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000,3001 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_-Force -ErrorAction SilentlyContinue }\")","Bash(del \"D:\\\\Quarter 4 Agentic AI\\\\Hackathon 2 Todo App\\\\Phase-II\\\\frontend\\\\.next\\\\dev\\\\lock\")","Bash(npx next dev)","Bash(taskkill /F /PID 13884)","Bash(powershell -Command \"Stop-Process -Id 13884 -Force -ErrorAction SilentlyContinue\")","Bash(taskkill /F /PID 10472)","Bash(powershell -Command \"Stop-Process -Id 10472 -Force -ErrorAction SilentlyContinue\")","Bash(taskkill /F /IM node.exe)","Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_-Force }\")","Bash(taskkill /F /PID 18012)","Bash(findstr :3000)","Bash(taskkill /F /PID 10816)","Bash(powershell -Command \"Stop-Process -Id 10816 -Force\")"]
+2026-01-31T16:21:32.261Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-31T16:21:32.261Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-31T16:21:32.332Z [DEBUG] [keybindings] KeybindingSetup initialized with 99 bindings, 0 warnings
+2026-01-31T16:21:32.486Z [DEBUG] High write ratio: blit=0, write=1351 (100.0% writes), screen=27x114
+2026-01-31T16:21:32.620Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.5984.1769876492620
+2026-01-31T16:21:32.620Z [DEBUG] Preserving file permissions: 100666
+2026-01-31T16:21:32.621Z [DEBUG] Temp file written successfully, size: 4501 bytes
+2026-01-31T16:21:32.622Z [DEBUG] Applied original permissions to temp file
+2026-01-31T16:21:32.622Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.5984.1769876492620 to C:\Users\lenovo\.claude.json
+2026-01-31T16:21:32.622Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-31T16:21:32.638Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-01-31T16:21:32.638Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-01-31T16:21:32.651Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-01-31T16:21:32.655Z [DEBUG] performStartupChecks called
+2026-01-31T16:21:32.656Z [DEBUG] Starting background plugin installations
+2026-01-31T16:21:32.656Z [DEBUG] performBackgroundPluginInstallations called
+2026-01-31T16:21:32.724Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-01-31T16:21:32.735Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-31T16:21:32.735Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-31T16:21:32.735Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-31T16:21:32.794Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-01-31T16:21:32.795Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-01-31T16:21:32.806Z [DEBUG] Watching for changes in skill/command directories: D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\skills, D:\Quarter 4 Agentic AI\Hackathon 2 Todo App\Phase-II\.claude\commands...
+2026-01-31T16:21:33.080Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.5984.1769876493080
+2026-01-31T16:21:33.081Z [DEBUG] Preserving file permissions: 100666
+2026-01-31T16:21:33.082Z [DEBUG] Temp file written successfully, size: 4501 bytes
+2026-01-31T16:21:33.082Z [DEBUG] Applied original permissions to temp file
+2026-01-31T16:21:33.082Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.5984.1769876493080 to C:\Users\lenovo\.claude.json
+2026-01-31T16:21:33.083Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-31T16:21:33.273Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.5984.1769876493273
+2026-01-31T16:21:33.274Z [DEBUG] Preserving file permissions: 100666
+2026-01-31T16:21:33.275Z [DEBUG] Temp file written successfully, size: 4501 bytes
+2026-01-31T16:21:33.275Z [DEBUG] Applied original permissions to temp file
+2026-01-31T16:21:33.275Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.5984.1769876493273 to C:\Users\lenovo\.claude.json
+2026-01-31T16:21:33.276Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-31T16:21:33.318Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude.json.tmp.5984.1769876493318
+2026-01-31T16:21:33.319Z [DEBUG] Preserving file permissions: 100666
+2026-01-31T16:21:33.320Z [DEBUG] Temp file written successfully, size: 4501 bytes
+2026-01-31T16:21:33.320Z [DEBUG] Applied original permissions to temp file
+2026-01-31T16:21:33.320Z [DEBUG] Renaming C:\Users\lenovo\.claude.json.tmp.5984.1769876493318 to C:\Users\lenovo\.claude.json
+2026-01-31T16:21:33.321Z [DEBUG] File C:\Users\lenovo\.claude.json written atomically
+2026-01-31T16:21:36.329Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-31T16:21:36.329Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-31T16:21:36.614Z [DEBUG] Sending 13 skills via attachment (initial, 13 total sent)
+2026-01-31T16:21:36.616Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-31T16:21:36.616Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-31T16:21:36.627Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-31T16:21:36.627Z [DEBUG] Found 0 hook matchers in settings
+2026-01-31T16:21:36.627Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-31T16:21:36.651Z [DEBUG] FileHistory: Added snapshot for ebb6e3ec-cafd-40bb-ab6d-d0b19880e876, tracking 0 files
+2026-01-31T16:21:36.759Z [DEBUG] Writing to temp file: C:\Users\lenovo\.claude\todos\5cd25282-8166-40c8-95f2-a55c7a261432-agent-5cd25282-8166-40c8-95f2-a55c7a261432.json.tmp.5984.1769876496759
+2026-01-31T16:21:36.760Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-31T16:21:36.760Z [DEBUG] Renaming C:\Users\lenovo\.claude\todos\5cd25282-8166-40c8-95f2-a55c7a261432-agent-5cd25282-8166-40c8-95f2-a55c7a261432.json.tmp.5984.1769876496759 to C:\Users\lenovo\.claude\todos\5cd25282-8166-40c8-95f2-a55c7a261432-agent-5cd25282-8166-40c8-95f2-a55c7a261432.json
+2026-01-31T16:21:36.761Z [DEBUG] File C:\Users\lenovo\.claude\todos\5cd25282-8166-40c8-95f2-a55c7a261432-agent-5cd25282-8166-40c8-95f2-a55c7a261432.json written atomically
+2026-01-31T16:21:36.842Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-31T16:21:36.850Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.27.b56; cc_entrypoint=cli;
+2026-01-31T16:21:36.858Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:36.858Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:36.867Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-31T16:21:36.867Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:37.168Z [DEBUG] Stats cache version mismatch (got 1, expected 2), returning empty cache
+2026-01-31T16:21:37.169Z [DEBUG] Stats cache empty, processing all historical data in background
+2026-01-31T16:21:37.211Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-01-31T16:21:37.258Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.27.84b; cc_entrypoint=cli;
+2026-01-31T16:21:37.274Z [ERROR] ReferenceError: ReferenceError: Bun is not defined
+    at Z34 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1602:27809)
+    at f34 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1614:83)
+    at C5q (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4787:6330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4787:3611
+    at async Z$A (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1027:2007)
+    at async pM1 (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:4787:3581)
+    at async mN (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:3186:5201)
+    at async file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:6197:2795
+    at async file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:6197:4107
+2026-01-31T16:21:37.275Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:37.275Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:37.277Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:37.566Z [DEBUG] Summarizing all 418 messages (~0 tokens)
+2026-01-31T16:21:37.606Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-31T16:21:37.607Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.27.fee; cc_entrypoint=cli;
+2026-01-31T16:21:37.608Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:37.608Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:37.609Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:38.181Z [DEBUG] Stats cache saved successfully (lastComputedDate: 2026-01-30)
+2026-01-31T16:21:38.181Z [DEBUG] Stats cache updated with 10 sessions
+2026-01-31T16:21:39.156Z [ERROR] API error (attempt 1/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"a889aa81-e34c-9942-868b-068b6aba1631\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"a889aa81-e34c-9942-868b-068b6aba1631\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:39.795Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:39.795Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:39.795Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:39.846Z [ERROR] API error (attempt 1/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"ad5fca70-7b4d-9723-96f4-815afe111bbe\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"ad5fca70-7b4d-9723-96f4-815afe111bbe\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:40.141Z [ERROR] API error (attempt 1/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"759e27c7-5984-9cd3-9f23-aa0f3f952727\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"759e27c7-5984-9cd3-9f23-aa0f3f952727\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:40.219Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-01-31T16:21:40.219Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-01-31T16:21:40.297Z [ERROR] API error (attempt 2/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"a489b57b-d0f6-9927-89b3-83e558341a5e\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"a489b57b-d0f6-9927-89b3-83e558341a5e\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:40.404Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:40.405Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:40.405Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:40.741Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:40.741Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:40.741Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:41.366Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:41.366Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:41.366Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:41.613Z [ERROR] API error (attempt 2/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"2291299d-ad3a-9587-902e-460084443b68\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"2291299d-ad3a-9587-902e-460084443b68\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:41.930Z [ERROR] API error (attempt 3/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"4b3a6bd2-7323-957d-8f37-bb075300d5de\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"4b3a6bd2-7323-957d-8f37-bb075300d5de\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:42.758Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:42.758Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:42.758Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:43.234Z [ERROR] API error (attempt 3/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"cf25f5a1-297c-9ea0-811e-7e0ddaf766ba\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"cf25f5a1-297c-9ea0-811e-7e0ddaf766ba\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:43.993Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:43.994Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:43.994Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:44.172Z [ERROR] API error (attempt 2/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"5ebcca0f-ccd1-9c59-9d36-486367003096\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"5ebcca0f-ccd1-9c59-9d36-486367003096\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:44.520Z [ERROR] API error (attempt 4/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"2300bb1a-cf34-9869-953c-cd2d9e521127\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"2300bb1a-cf34-9869-953c-cd2d9e521127\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:45.308Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:45.308Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:45.308Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:45.318Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:45.318Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:45.318Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:46.222Z [ERROR] API error (attempt 4/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"25651d05-9fac-9991-9932-a8259d2094a7\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"25651d05-9fac-9991-9932-a8259d2094a7\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:48.282Z [ERROR] API error (attempt 3/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"2038377f-ef71-97b2-b3a0-3a0929c0ad1e\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"2038377f-ef71-97b2-b3a0-3a0929c0ad1e\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:48.886Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:48.887Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:48.887Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:49.632Z [ERROR] API error (attempt 5/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"97f00bf7-9381-9a6c-9d81-cb283bb59312\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"97f00bf7-9381-9a6c-9d81-cb283bb59312\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:50.320Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:50.320Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:50.320Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:50.956Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:50.956Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:50.956Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:51.363Z [ERROR] API error (attempt 4/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"04cd22d8-2f4e-9a75-a966-d0c5e00b95f9\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"04cd22d8-2f4e-9a75-a966-d0c5e00b95f9\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:53.852Z [ERROR] API error (attempt 5/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"0c32e4f6-216e-97e8-9df4-ceefbe366c1b\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"0c32e4f6-216e-97e8-9df4-ceefbe366c1b\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:55.611Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:55.611Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:55.611Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:21:58.640Z [ERROR] API error (attempt 5/11): 401 401 {"error":{"message":"Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"374a2a38-2a01-9850-bea4-9e7d6255a442\"}Error: Error from provider(qwen,qwen3-coder-plus: 401): {\"error\":{\"code\":\"invalid_api_key\",\"message\":\"invalid access token or token expired\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"374a2a38-2a01-9850-bea4-9e7d6255a442\"}\n    at qn (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:7451)\n    at fD (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:11338)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async cN (C:\\Users\\lenovo\\AppData\\Roaming\\npm\\node_modules\\@musistudio\\claude-code-router\\dist\\cli.js:582:8659)","type":"api_error","code":"provider_response_error"}}
+2026-01-31T16:21:59.302Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-31T16:21:59.303Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-31T16:21:59.303Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-31T16:22:00.212Z [ERROR] Error in non-streaming fallback: Request was aborted.
+2026-01-31T16:22:00.215Z [ERROR] Error: Error: Request was aborted.
+    at EventTarget.w (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:1602:10978)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:826:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:761:26)
+    at abortSignal (node:internal/abort_controller:371:10)
+    at AbortController.abort (node:internal/abort_controller:393:5)
+    at xw (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:6195:62043)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:6174:5797
+    at Object.current (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:776:6193)
+    at file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:776:2503
+    at u$1.H (file:///C:/Users/lenovo/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:776:3356)
+2026-01-31T16:22:00.285Z [DEBUG] Full reset (shrink->below): prevHeight=33, nextHeight=20, viewport=29
+2026-01-31T16:22:00.662Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-31T16:22:00.662Z [DEBUG] Found 0 hook matchers in settings
+2026-01-31T16:22:00.663Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+2026-01-31T16:22:00.678Z [DEBUG] LSP server manager shut down successfully
+2026-01-31T16:22:01.387Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
